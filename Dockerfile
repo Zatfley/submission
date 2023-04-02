@@ -15,5 +15,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+ENV PORT=9000
 EXPOSE 9000
 CMD [ "node", "./src/server.js" ]
